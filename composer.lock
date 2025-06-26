@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb0e19b4008eb8c5765967b7a0c40e46",
+    "content-hash": "e3ae23b44bed81d5699057b18101d771",
     "packages": [
         {
             "name": "async-aws/core",
@@ -4809,6 +4809,32 @@
                 "source": "https://github.com/Seldaek/signal-handler/tree/2.0.2"
             },
             "time": "2023-09-03T09:24:00+00:00"
+        },
+        {
+            "name": "spryker-community/queue-cli",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-community/queue-cli.git",
+                "reference": "d1786afc6c3f8e8b135f1cc7245058effde25ff1"
+            },
+            "require": {
+                "php": ">=8.1",
+                "spryker/gui": "^3.0.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SprykerCommunity\\": "src/SprykerCommunity/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "SprykerCommunity queue cli tool",
+            "time": "2025-06-25T10:22:39+00:00"
         },
         {
             "name": "spryker-eco/loggly",
@@ -69242,6 +69268,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "spryker-community/queue-cli": 20,
         "spryker/cypress-tests": 20,
         "spryker/docker-chromedriver": 20,
         "spryker/robotframework-suite-tests": 20

@@ -150,6 +150,7 @@ $config[KernelConstants::PROJECT_NAMESPACES] = [
     'Pyz',
 ];
 $config[KernelConstants::CORE_NAMESPACES] = [
+    'SprykerCommunity',
     'SprykerShop',
     'SprykerEco',
     'Spryker',

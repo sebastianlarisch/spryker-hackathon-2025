@@ -173,6 +173,7 @@ use Spryker\Zed\Twig\Communication\Plugin\Application\TwigApplicationPlugin;
 use Spryker\Zed\Uuid\Communication\Console\UuidGeneratorConsole;
 use Spryker\Zed\ZedNavigation\Communication\Console\BuildNavigationConsole;
 use Spryker\Zed\ZedNavigation\Communication\Console\RemoveNavigationCacheConsole;
+use SprykerCommunity\Zed\QueueCli\Communication\Console\QueueCliConsole;
 use SprykerEco\Zed\NewRelic\Communication\Console\RecordDeploymentConsole;
 use SprykerShop\Zed\DateTimeConfiguratorPageExample\Communication\Console\DateTimeProductConfiguratorBuildFrontendConsole;
 
@@ -429,6 +430,7 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
             $commands[] = new GenerateRestApiDocumentationConsole();
             $commands[] = new CustomerPasswordResetConsole();
             $commands[] = new CustomerPasswordSetConsole();
+            $commands[] = new QueueCliConsole();
 
             if (class_exists(SecurityCheckerCommand::class)) {
                 $commands[] = new SecurityCheckerCommand();
